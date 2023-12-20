@@ -9,6 +9,7 @@ import { GrCircleInformation } from "react-icons/gr";
 import SearchBar from "./SearchBar";
 
 function Header(){
+    
     return(
         <header>
             <img src={logo} alt="Company logo" />
