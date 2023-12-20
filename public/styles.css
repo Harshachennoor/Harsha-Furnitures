@@ -121,7 +121,7 @@ li a {
 
 .rightCatSaleDiv {
     margin-left: 20px;
-    width: 1026px;
+    width: 80%;
     height: 224px;
 }
 
@@ -140,12 +140,14 @@ li a {
     width: 100%;
     flex-direction: column;
     flex: 1;
-    border: 2px solid blue;
 
 }
 
 .ImageNameDiv {
     display: flex;
+    padding-left: 5%;
+    justify-content: space-between;
+    font-size: 18px;
 
 }
 
@@ -221,7 +223,7 @@ li a {
 
 /* When the checkbox is checked, add a brown background */
 .checkbox-item input:checked~label:before {
-    background-color: brown;
+    background-color: lightblue;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */

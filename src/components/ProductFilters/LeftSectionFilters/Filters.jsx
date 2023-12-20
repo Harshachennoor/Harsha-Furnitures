@@ -18,9 +18,6 @@ function Filters() {
                 min="100"
                 max="100000"
             />
-            <DynamicCheckBox
-                checkBoxTitle="Shape"
-                arrayData={shapeArray} />
             <RangeSlider
                 Title="Length (INCH)"
                 min="5"
@@ -31,6 +28,12 @@ function Filters() {
                 min="5"
                 max="250"
             />
+            <DynamicCheckBox
+                checkBoxTitle="Shape"
+                arrayData={shapeArray} />
+            <DynamicCheckBox
+                checkBoxTitle="Type"
+                arrayData={brandArray} />
             <DynamicCheckBox
                 checkBoxTitle="Type"
                 arrayData={typeArray} />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function DynamicCheckBox(props) {
-    const uniqueId = props.uniqueId || 'default'; 
+    // const uniqueId = props.uniqueId || 'default'; 
 
     const items = props.arrayData;
     const [isOpen, setIsOpen] = useState(true);
@@ -30,16 +30,16 @@ function DynamicCheckBox(props) {
             </div>
 
             {isOpen && items.map((item, index) => (
-                <div key={`${uniqueId}-checkbox-${index}`} className="checkbox-item">
+                <div key={item} className="checkbox-item">
                     <input
                         type="checkbox"
-                        id={`${uniqueId}-checkbox-${index}`}
+                        id={item}
                         name={item}
                         value={item}
                         checked={checkedState[index]}
                         onChange={() => handleOnChange(index)}
                     />
-                    <label htmlFor={`${uniqueId}-checkbox-${index}`}>{item}</label>
+                    <label htmlFor={item}>{item}</label>
                 </div>
             ))}
         </div>

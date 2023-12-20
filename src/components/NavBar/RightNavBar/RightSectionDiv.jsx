@@ -1,11 +1,21 @@
-import React from "react";
+import React,{useState} from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
 function RightSectionDiv(props) {
     const altTxt = `${props.label} Image`;
+    const [hover, setHover] = useState(false);
+
+    const style = {
+        border: `2px solid ${hover ? 'blue' : null}`, // Change color on hover
+        backgroundColor: `${hover ? "lightblue":null}`
+    };
+    function handleChange(){
+
+    }
     return (
-        <div className="imageBlock">
-            <div >
+        <div >
+            <div style={style} className="imageBlock" onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}>
                 <a href={props.link}>
                     <div>
                         <div>
