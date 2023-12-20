@@ -6,8 +6,8 @@ function RightSectionDiv(props) {
     const [hover, setHover] = useState(false);
 
     const style = {
-        border: `2px solid ${hover ? 'blue' : null}`, // Change color on hover
-        backgroundColor: `${hover ? "lightblue":null}`
+        border: `2px solid ${hover ? 'blue' : 'white'}`, // Change color on hover
+        backgroundColor: `${hover ? "lightblue":'white'}`
     };
     function handleChange(){
 
